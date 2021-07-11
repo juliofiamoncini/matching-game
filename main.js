@@ -2,8 +2,8 @@ import "./src/styles/settings/colors.css"
 import "./src/styles/generic/reset.css"
 import "./src/styles/elements/base.css"
 
-import PlayerName from "./src/components/PlayerName";
 import BoardGame from './src/objects/BoardGame';
+import ScoreBoard from './src/objects/ScoreBoard';
 
 const $root = document.querySelector("#root");
 
@@ -17,8 +17,7 @@ for (let i = 0; i < playerQuantity; i++) {
 $root.insertAdjacentHTML(
     'beforeEnd',
     `
-        ${PlayerName('Player 1')}
-        ${PlayerName('Player 2')}
+        ${ScoreBoard()}
         ${BoardGame(6)}        
     `
 );

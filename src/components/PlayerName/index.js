@@ -2,9 +2,9 @@ import "./style.css"
 
 function PlayerName(name) {
     return `
-        <article class="player-name">
+        <p class="player-name">
             ${name}
-        </article>
+        </p>
     `;
 }
 
